@@ -28,12 +28,13 @@
     let counter = 0;
     function increment() {
         counter++;
-        h1.innerText = counter;
+        h1.innerText = counter;0
     }
     let arr = document.querySelectorAll("*");
     for (let i = 0; i < arr.length; i++) {
         const element = arr[i];
-        element.addEventListener("click",increment());
+        element.style.backgroundColor = "red";
+        element.addEventListener("click",increment);
     }
 </script>
 </html>
