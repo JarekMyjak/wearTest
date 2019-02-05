@@ -30,5 +30,10 @@
         counter++;
         h1.innerText = counter;
     }
+    let arr = document.querySelectorAll("*");
+    for (let i = 0; i < arr.length; i++) {
+        const element = arr[i];
+        element.addEventListener("click",increment());
+    }
 </script>
 </html>
